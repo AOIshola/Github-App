@@ -1,0 +1,38 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    max-height: 70vh;
+  
+    img {
+      width: 40%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 2rem;
+      line-height: 130%;
+    }
+    .error-msg {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      font-weight: bold;
+      gap: 1rem;
+    }
+    .btn {
+      width: fit-content;
+      border: none;
+      padding: 5px 10px;
+      background: #bd1d3d;
+      color: #fff;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
