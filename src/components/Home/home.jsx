@@ -54,12 +54,13 @@ const Home = () => {
         currentPage > 1 ? setCurrentPage(prev => prev - 1) : setCurrentPage(numPages)
     }
 
+    const KEY = import.meta.env.VITE_GITHUB_TOKEN
     useEffect(() => {
         async function userData() {
             try {
                 const response = await fetch(`https://api.github.com/users/AOIshola`, {
                     headers: {
-                        authorization: 'token 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'
+                        authorization: `token ${KEY}`
                     }
                 })
                 if (response.ok != true) {
